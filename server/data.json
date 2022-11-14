@@ -1,0 +1,60 @@
+{
+  "estudiantes": [
+    {
+      "name": "Vicencio",
+      "lastname": "Vitoria",
+      "user": "Est01",
+      "email": "dobleuve@gmail.com",
+      "mobile": 603578534,
+      "img": "/avatars3.jpg"
+    },
+    {
+      "name": "Ramona",
+      "lastname": "del Árbol",
+      "user": "Est02",
+      "email": "ramonatree@gmail.com",
+      "mobile": 685675342,
+      "img": "/avatars1.jpg"
+    },
+    {
+      "name": "Martina",
+      "lastname": "Mogollo",
+      "user": "Est03",
+      "email": "martimogollo@gmail.com",
+      "mobile": 614786523,
+      "img": "/avatars2.jpg"
+    },
+    {
+      "name": "Alba",
+      "lastname": "Lava",
+      "user": "Est04",
+      "email": "lavalba@gmail.com",
+      "mobile": "697451365",
+      "id": "697451365"
+    },
+    {
+      "name": "Gloria",
+      "lastname": "Merin",
+      "user": "dcdscd",
+      "email": "glorymecas@hotmail.com",
+      "mobile": "605430590",
+      "id": "605430590"
+    },
+    {
+      "name": "fdvfvdf",
+      "lastname": "vfvf",
+      "user": "fvfdvdfd",
+      "email": "fvdfvfd",
+      "mobile": "fvdfvf",
+      "id": "fvdfvf"
+    },
+    {
+      "name": "scdcs",
+      "lastname": "dsdcsdc",
+      "user": "scdc",
+      "email": "sdcsdc",
+      "mobile": "sdcds",
+      "id": "sdcds"
+    }
+  ]
+}

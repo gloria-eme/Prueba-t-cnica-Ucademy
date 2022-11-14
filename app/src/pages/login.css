@@ -1,0 +1,141 @@
+@import url('https://fonts.cdnfonts.com/css/montserrat?styles=17400');
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@200&family=Roboto&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@200;500&display=swap');
+.App {
+    display: flex;
+    flex-direction: column;
+    max-height: 400rem;
+    position: relative;
+    padding-bottom: 2em;
+    height: 80%;
+}
+
+main {
+    min-height: 500px;
+}
+
+.login {
+    position: relative;
+    align-items: center; 
+    display: flex;
+    flex-direction: column;
+}
+
+.imgLogin {
+    width: 26rem;
+    margin-top: 5rem;
+}
+
+.form{
+    display: block;
+    align-items: center;
+    justify-content: flex-start;
+    padding: 0rem 1rem;
+    display: flex;
+    position: relative;
+    column-gap: 10rem;
+    margin-top: 3rem;
+    flex-direction: column;
+    width: 24rem;
+    font-family: 'Montserrat';
+}
+
+
+
+.divlogin {
+    display: flex;
+    flex-direction: column;
+    gap: .2rem;
+    margin-top: -2rem;
+    width: 26rem;
+    text-align: left;
+}
+
+strong {
+    color: #FB5A5A
+}
+
+div> label {
+    line-height: 22px;
+    font-size: .8rem;
+    padding-top: .8rem;
+    color: rgba(18, 18, 18, 0.85)
+}
+
+form > label {
+    position: relative;
+    display: block;  
+}
+
+div > input {
+    height: 1.8rem;
+    width: 25rem;
+    border:1px solid #DBDBDB;
+    border-radius: 8px;
+}
+
+/* .user{
+
+}
+
+.contraseña {
+
+} */
+.ojo {
+    height: 1.5rem;
+    padding: -.3rem
+}
+
+.check {
+    display: flex;
+    flex-direction: row;  
+    justify-items: center;
+    line-height: 22px;
+}
+.checkbox{
+    width: 18px;
+    height: 16px;
+    left: 519px;
+    border-radius: 1px;
+    margin-top: .9rem;
+    border:1px solid #DBDBDB;
+    
+}
+
+.rememberme {
+    font-size: .7rem;
+    padding-right: 10.5rem;
+    color: rgba(33, 33, 33, 0.85);
+}
+
+.forget{
+    text-align: right;
+    color: #9E9E9E;
+    font-size: .7rem; 
+}
+
+
+.submit {
+    width: 91px;
+    height: 22px;
+    padding: 4px 15px;
+    gap: 8px;
+    font-family: 'Poppins';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 13px;
+    width: 115px;
+    height: 29px;
+    left: 658px;
+    top: 685px;
+    box-shadow: 0px 2px 0px rgba(0, 0, 0, 0.043);
+    border-radius: 8px;
+    text-align: center;
+    background: #262D34;
+    color: #FFFFFF;
+}
+
+.error {
+    color: #FB5A5A;
+    font-size: .7rem; 
+}
