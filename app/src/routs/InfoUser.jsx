@@ -1,21 +1,27 @@
 import Popup from 'reactjs-popup';
 import React from 'react';
+import { useContext } from 'react';
 import EditStudent from './EditStudent';
+import { TableContext } from '../components/Table';
 
-const InfoUser = ({ item }) => {
-    return (
-<Popup trigger={<h4 className='info'>i</h4>} position="right center" modal nested>
+
+const InfoUser = () => {
+const item = useContext(TableContext);
+
+   return (
+    <Popup trigger={<h4 className='info'>i</h4>} position="right center" modal nested>
     {(close) => (
-    <div className="modal" key={item.user}>
+    
+    <div className="modal" key={item.mobile}>
         <div className='barra'>
             <button className='perfil'>Perfil</button>
             <button className='curses'>Cursos</button>
-            <EditStudent item={item}/>
+            <EditStudent/> 
         </div>
         <div className='section'>
             <img className='avatar' src={item.img} alt={item.img}/>
             <div className='users'>
-                <img src="avatar.png" alt={item.img}/>
+                <img src="avatar.png" alt="avatar"/>
                 <p><strong>Nombre y apellidos</strong><br/>{item.name}</p>
             </div>
             <div className='nameuser'>  
@@ -37,8 +43,8 @@ const InfoUser = ({ item }) => {
         <button className="close" onClick={close}>
           Cerrar
         </button>
-
     </div>
+    
     )}
   </Popup>
 )}

@@ -1,5 +1,5 @@
 // import InputLogin from "../componens/INputLogin"
-import LoginForm from "../components/LoginForm";
+import LoginForm from "../components/LoginForm"
 // import RefForm from "../componens/RefForm";
 import "./login.css"
 

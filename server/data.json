@@ -30,31 +30,12 @@
       "user": "Est04",
       "email": "lavalba@gmail.com",
       "mobile": "697451365",
-      "id": "697451365"
+      "id": "697451365",
+      "img": "/avatars4.jpg"
     },
     {
-      "name": "Gloria",
-      "lastname": "Merin",
-      "user": "dcdscd",
-      "email": "glorymecas@hotmail.com",
-      "mobile": "605430590",
-      "id": "605430590"
-    },
-    {
-      "name": "fdvfvdf",
-      "lastname": "vfvf",
-      "user": "fvfdvdfd",
-      "email": "fvdfvfd",
-      "mobile": "fvdfvf",
-      "id": "fvdfvf"
-    },
-    {
-      "name": "scdcs",
-      "lastname": "dsdcsdc",
-      "user": "scdc",
-      "email": "sdcsdc",
-      "mobile": "sdcds",
-      "id": "sdcds"
+      "students": "",
+      "id": "nOjiKs1"
     }
   ]
 }
