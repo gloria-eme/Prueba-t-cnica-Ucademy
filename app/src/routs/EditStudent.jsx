@@ -15,7 +15,7 @@ const EditStudent = () => {
   const [user, setUser] = useState(item.user);
   const [email, setEmail] = useState(item.email);
   const [mobile, setMobile] = useState(item.mobile);
-  const { students, setStudents, editStudent, setEditStudent } = useContext(MyContext);
+  const { editStudent, setEditStudent } = useContext(MyContext);
   const navigate = useNavigate();
 
   const editUser = (ev) => {
@@ -32,17 +32,17 @@ const EditStudent = () => {
     };
     console.log(editStudent);
     
-    //  postEditUser(postuser);
+    postEditUser(postuser);
     setEditStudent(editStudent);
   };
 
-  // const postEditUser = async () => {
-  //   axios({
-  //     method: 'put',
-  //     url: `http://localhost:3000/estudiantes/`,
-  //     data: item,
-  //   });
-  // };
+  const postEditUser = async () => {
+    axios({
+      method: 'put',
+      url: `http://localhost:3000/estudiantes/`,
+      data: item,
+    });
+  };
   
 
   // const refreshPage = () => {
