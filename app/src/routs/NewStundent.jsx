@@ -14,6 +14,7 @@ const NewStudent = () => {
 
   const createUser = (ev) => {
     ev.preventDefault();
+    
     const newUser = {
       name: name,
       lastname: lastname,

@@ -15,37 +15,39 @@ const EditStudent = () => {
   const [user, setUser] = useState(item.user);
   const [email, setEmail] = useState(item.email);
   const [mobile, setMobile] = useState(item.mobile);
-  const { editStudent, setEditEstudent }  = useContext(MyContext);
+  const { students, setStudents, editStudent, setEditStudent } = useContext(MyContext);
   const navigate = useNavigate();
-  
 
   const editUser = (ev) => {
     ev.preventDefault();
 
-    const edituser = {
+    const postuser = {
       ...item,
       name: name,
       lastname: lastName,
       user: user,
       email: email,
       mobile: mobile,
-      id: mobile
+      id: mobile,
     };
-    postEditUser(edituser);
-    // setEditEstudent(!editStudent);
+    console.log(editStudent);
+    
+    //  postEditUser(postuser);
+    setEditStudent(editStudent);
   };
 
-  const refreshPage = () => {
-    window.location.reload(false);
-  };
+  // const postEditUser = async () => {
+  //   axios({
+  //     method: 'put',
+  //     url: `http://localhost:3000/estudiantes/`,
+  //     data: item,
+  //   });
+  // };
+  
 
-  const postEditUser = async (item) => {
-  axios({
-    method: 'put',
-    url: `http://localhost:3000/estudiantes/{item.id}`,
-    data: item,
-  });
-};
+  // const refreshPage = () => {
+  //   window.location.reload(false);
+  // };
 
   return (
     <Popup
@@ -55,7 +57,7 @@ const EditStudent = () => {
       nested
     >
       {(close) => (
-        <div  className="modal">
+        <div className="modal">
           <div className="barra">
             <button className="perfil">Perfil</button>
             <button className="curses">Cursos</button>
@@ -65,7 +67,7 @@ const EditStudent = () => {
           <form
             className="form"
             onSubmit={(ev) => {
-                editUser(ev), navigate('/home');
+              editUser(ev), navigate('/home');
             }}
           >
             <div className="divlogin">
@@ -73,9 +75,11 @@ const EditStudent = () => {
               <input
                 type="text"
                 id="name"
-                onChange={(ev) => setName(ev.target.value)}
+                onChange={(ev) =>{ setName(ev.target.value), console.log(name)}}
                 value={name}
+                
               />
+              
               <label htmlFor="lastname">Apellidos</label>
               <input
                 type="text"
@@ -108,7 +112,14 @@ const EditStudent = () => {
                 value={mobile}
               />
             </div>
-            <input className="save" type="submit" onClick={refreshPage} value="Guardar" />
+            <input
+              className="save"
+              type="submit"
+              // onClick={(ev) => {
+              //   editUser(ev);
+              // }}
+              value="Guardar"
+            />
           </form>
 
           <button className="close" onClick={close}>
